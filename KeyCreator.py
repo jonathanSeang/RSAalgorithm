@@ -50,7 +50,7 @@ print("------------------")
 
 #Find d such that:
 #e * d % Φ = 1
-largeNumberForD = 100
+largeNumberForD = 10000
 possibleD = []
 for i in range (1, largeNumberForD):
     if e * i % Φ == 1:
@@ -62,6 +62,7 @@ d = int(input("Enter your choice of d from all possible listed above: "))
 print("------------------")
 
 print("Your encryption (public e) key = " + str(e))
-print("Your private (private d) key = " + str(d))
+print("Your decryption (private d) key = " + str(d))
+print("Your N needed for translation = " + str(N))
 
 print("------------------")
